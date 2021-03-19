@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos",
+  "info": {
+    "name": "Evento"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "fecha": {
+      "type": "datetime",
+      "private": false,
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 1
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
