@@ -14,10 +14,6 @@
     "nombre": {
       "type": "string"
     },
-    "posts": {
-      "collection": "post",
-      "via": "categorias"
-    },
     "imagen": {
       "model": "file",
       "via": "related",

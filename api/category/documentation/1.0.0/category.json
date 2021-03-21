@@ -525,49 +525,6 @@
           "nombre": {
             "type": "string"
           },
-          "posts": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "titulo",
-                "contenido",
-                "descripcion"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "titulo": {
-                  "type": "string"
-                },
-                "miniatura": {
-                  "type": "string"
-                },
-                "contenido": {
-                  "type": "string"
-                },
-                "descripcion": {
-                  "type": "string"
-                },
-                "categorias": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "imagen": {
             "required": [
               "id",
@@ -645,12 +602,6 @@
         "properties": {
           "nombre": {
             "type": "string"
-          },
-          "posts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",

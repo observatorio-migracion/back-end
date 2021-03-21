@@ -21,12 +21,10 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "contenido": {
       "type": "richtext",
@@ -40,9 +38,7 @@
       "maxLength": 140
     },
     "categorias": {
-      "via": "posts",
-      "collection": "category",
-      "dominant": true
+      "collection": "category"
     }
   }
 }

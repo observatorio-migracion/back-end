@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/16/2021 6:20:05 PM"
+    "x-generation-date": "03/20/2021 6:52:24 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4201,49 +4201,6 @@
           "nombre": {
             "type": "string"
           },
-          "posts": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "titulo",
-                "contenido",
-                "descripcion"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "titulo": {
-                  "type": "string"
-                },
-                "miniatura": {
-                  "type": "string"
-                },
-                "contenido": {
-                  "type": "string"
-                },
-                "descripcion": {
-                  "type": "string"
-                },
-                "categorias": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "imagen": {
             "required": [
               "id",
@@ -4321,12 +4278,6 @@
         "properties": {
           "nombre": {
             "type": "string"
-          },
-          "posts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",
@@ -4558,6 +4509,7 @@
         "required": [
           "id",
           "titulo",
+          "miniatura",
           "contenido",
           "descripcion"
         ],
@@ -4658,12 +4610,6 @@
                 },
                 "nombre": {
                   "type": "string"
-                },
-                "posts": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "imagen": {
                   "type": "string"

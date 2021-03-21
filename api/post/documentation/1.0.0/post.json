@@ -518,6 +518,7 @@
         "required": [
           "id",
           "titulo",
+          "miniatura",
           "contenido",
           "descripcion"
         ],
@@ -618,12 +619,6 @@
                 },
                 "nombre": {
                   "type": "string"
-                },
-                "posts": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "imagen": {
                   "type": "string"
