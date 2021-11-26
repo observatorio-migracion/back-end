@@ -1,8 +1,8 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '127.0.0.1'),
+  host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: 'http://localhost/api',
+  url: 'http://0.0.0.0/api',
   admin: {
-    url: 'http://localhost/panel-de-administrador',
+    url: 'http://0.0.0.0/panel-de-administrador',
   },
 });
